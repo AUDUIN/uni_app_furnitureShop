@@ -22,6 +22,18 @@
             "path" : "pages/address/address",
             "style" : {}
         }
+        ,{
+            "path" : "pages/confirmations/confirmations",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/successOrder/successOrder",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/profile/profile",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -193,7 +193,6 @@
 				margin-bottom: 208upx;
 
 				input {
-					// height: 44upx;
 					font-size: 34upx;
 					line-height:44upx;
 					margin-left: 48upx;
