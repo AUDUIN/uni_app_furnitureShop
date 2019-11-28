@@ -5,13 +5,14 @@
 				优惠促销
 			</view>
 			<view class="head-user fr">
-				
+				<uni-icons type="person" size="32" v-if="true"></uni-icons>
+				<image src="../../static/logo.png" mode="" v-else></image>
 			</view>
 			<view class="clearfix"></view>	
 		</view>
 		<view class="main">
 			<view class="card">
-				<view class="on-sale" @tap="jumptodetail(goodsdata[0]._id)">
+				<view class="on-sale clearfix" @tap="jumptodetail(goodsdata[0]._id)">
 					<view class="goodspic fl">
 						<image :src=BASE_URL+goodsdata[0].imgurl  mode=""></image>
 					</view>
@@ -20,20 +21,20 @@
 							{{goodsdata[0].goodsname}}
 						</view>
 						<view class="price">
-							${{goodsdata[0].newprice}} <text>${{goodsdata[0].price}}</text>
+							￥{{goodsdata[0].newprice}} <text>￥{{goodsdata[0].price}}</text>
 						</view>
-						<view class="addtocart fr">
+						<view class="addtocart fr" @tap.stop="addmut(goodsdata[0])">
 							+
 						</view>
 					</view>
 				</view>
-				<view class="on-sale" @tap="jumptodetail(goodsdata[1]._id)">
+				<view class="on-sale clearfix" @tap="jumptodetail(goodsdata[1]._id)">
 						<view class="goodsinfo fl">
 								<view class="title">
 								{{goodsdata[1].goodsname}}
 								</view>
 								<view class="price">
-									${{goodsdata[1].newprice}} <text>${{goodsdata[1].price}}</text>
+									￥{{goodsdata[1].newprice}} <text>￥{{goodsdata[1].price}}</text>
 								</view>
 								<view class="addtocart fr">
 									+
@@ -50,24 +51,33 @@
 					<view class="title">
 						最佳收藏
 					</view>
-					<view class="today-share">
-						<image class="fl" src="../../static/img/d4.png" mode=""></image>
-						<view class="goodsinfo">
-							<view class="name">
-								原创个性座椅
+				
+						<view class="today-share"
+							v-for="(item,index) in goodsdata"
+							:key="index"
+							 @tap="jumptodetail(item._id)"
+							>
+								<image class="fl" :src="BASE_URL+item.imgurl" mode=""></image>
+								<view class="goodsinfo">
+									<view class="name">
+										{{item.goodsname}}
+									</view>
+									<view class="price">
+										￥{{item.newprice}} <text>￥{{item.price}}</text>
+									</view>
+									<view class="addtocart fr"
+									@tap.stop="addmut(item)"
+									>
+										加入购物车
+									</view>
+								</view>
+								<view class="clearfix">
+									
+								</view>
 							</view>
-							<view class="price">
-								$22.9 <text>$32.9</text>
-							</view>
-							<view class="addtocart fr">
-								加入购物车
-							</view>
-						</view>
-						<view class="clearfix">
-							
-						</view>
+						
+				
 					</view>
-				</view>
 			
 		</view>
 		
@@ -75,17 +85,27 @@
 </template>
 
 <script>
+	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
 				goodsdata:[]
 			}
 		},
+		components:{uniIcons},
 		methods: {
 			jumptodetail(id){
 				uni.navigateTo({
 					url:`../detail/detail?id=${id}`
 				})
+			},
+			addmut(obj){
+				console.log('即将加入购物车',obj)
+				this.$store.commit('addmut',obj)
+				uni.showModal({
+					content: '已成功加入购物车',
+					showCancel: false
+				});
 			}
 		},
 		onLoad() {
@@ -111,12 +131,19 @@
 			padding-left: 64upx;
 		}
 		.head-user{
-			margin-top: 12upx;
+			text-align: center;
+			line-height: 64upx;
+			margin-top: 24upx;
 			margin-right: 32upx;
 			border-radius: 50%;
 			width: 64upx;
 			height: 64upx;
 			background-color: white;
+			image{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
 		}
 		.search{
 			margin-top: 42upx;
@@ -159,7 +186,7 @@
 		// height: 1000upx;
 		.card{
 			width:750upx;
-			height: 750upx;
+			// height: 750upx;
 			background:rgba(255,255,255,1);
 			box-shadow:0upx 14upx 34upx 0upx rgba(9,30,66,0.2);
 			border-radius:32upx;
@@ -170,7 +197,8 @@
 			font-size: 34upx;
 			font-weight:600;
 			.on-sale{
-				margin-top: 30upx;			
+				margin-top: 30upx;	
+				padding-bottom: 50upx ;
 			}
 			.goodsinfo{
 				width: 400upx;
@@ -218,7 +246,7 @@
 		.btm{	
 				margin-top: 20upx;
 				width:750upx;
-				height: 470upx;
+
 				background-color: #EFEFF4 !important;
 				.title{
 					padding-left: 50upx;
@@ -231,7 +259,11 @@
 					line-height:44upx;
 				}
 				.today-share{
-					width: 662upx;
+					padding: 25upx;
+					margin-top: 50upx;
+					border-radius: 48upx;
+					background-color: #ccc;
+					width: 700upx;
 					color: #091E42;
 					font-size: 34upx;
 					font-weight:600;

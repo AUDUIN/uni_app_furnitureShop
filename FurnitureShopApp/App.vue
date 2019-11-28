@@ -14,6 +14,7 @@
 
 <style>
 	/*每个页面公共css */
+
 	.fr{
 		float: right;
 	}
@@ -23,4 +24,13 @@
 	.clearfix{
 		clear: both;
 	}
+	.clearfix:after {
+	    display: block;
+	    clear: both;
+	    content: '';
+	    height: 0;
+	    overflow: hidden;
+	    visibility: hidden;
+	}
+	.clearfix{zoom:1;} /*为了兼容IE6,IE7*/
 </style>

@@ -4,7 +4,7 @@
 			{{detaildata.goodsname}}
 		</view>
 		<view class="price">
-			${{detaildata.price}}
+			￥{{detaildata.price}}
 		</view>
 		<view class="card">
 			<image :src=BASE_URL+detaildata.imgurl mode=""></image>
@@ -18,8 +18,8 @@
 			</view>
 			
 		</view>
-		<view class="btn">
-			加入购物车 ${{detaildata.price}}
+		<view class="btn" @tap="addmut(detaildata)">
+			加入购物车 ￥{{detaildata.price}}
 		</view>
 	</view>
 </template>
@@ -30,6 +30,16 @@
 			return {
 				detaildata:[]
 			};
+		},
+		methods:{
+			addmut(obj){
+				console.log('即将加入购物车',obj)
+				this.$store.commit('addmut',obj)
+				uni.showModal({
+					content: '已成功加入购物车',
+					showCancel: false
+				});
+			}
 		},
 		onLoad(option) {
 			console.log(option.id)

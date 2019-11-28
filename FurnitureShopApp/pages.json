@@ -1,13 +1,38 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
-            "path" : "pages/home-product/home-product",
-            "style" : {
+		    "path" : "pages/home-product/home-product",
+		    "style" : {
 				"navigationBarTitleText":"",
 				"transparentTitle":"always"
 			}
-        }
-        ,{
+		},	
+		{
+					"path": "pages/spec/spec",
+					"style": {
+						"navigationBarTitleText":"",
+						"transparentTitle":"always"
+					}
+				}
+			    ,{
+		            "path" : "pages/shoppingCart/shoppingCart",
+		            "style" : {
+						"navigationStyle":"custom"
+					}
+		        }
+		        ,{
+		            "path" : "pages/cart/cart",
+		            "style" : {
+						"navigationStyle":"custom"
+					}
+		        }
+		        ,{
+		            "path" : "pages/address/address",
+		            "style" : {"navigationBarTitleText":"",
+				"transparentTitle":"always"}
+		        },		
+		{
             "path" : "pages/day-deal/day-deal",
             "style" : {
 				"navigationBarTitleText":"",
@@ -20,6 +45,28 @@
 				"navigationBarTitleText":"",
 				"transparentTitle":"always"
 			}
+        }
+		        ,{
+		            "path" : "pages/confirmations/confirmations",
+		            "style" : {"navigationStyle":"custom"}
+		        }
+		        ,{
+		            "path" : "pages/successOrder/successOrder",
+		            "style" : {"navigationBarTitleText":"",
+				"transparentTitle":"always"}
+		        }
+		        ,{
+		            "path" : "pages/profile/profile",
+		            "style" : {"navigationBarTitleText":"",
+				"transparentTitle":"always"}
+		        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/sign/sign",
+            "style" : {}
         }
     ],
 	"tabBar": {
@@ -34,13 +81,13 @@
 	        "text": "探索"
 	    },
 		{
-		    "pagePath": "pages/API/index",
+		    "pagePath": "pages/cart/cart",
 		    "iconPath": "static/img/cart.png",
 		    "selectedIconPath": "static/img/cart.png",
 		    "text": "购物车"
 		},
 		{
-	        "pagePath": "pages/API/index",
+	        "pagePath": "pages/profile/profile",
 	        "iconPath": "static/img/wode.png",
 	        "selectedIconPath": "static/img/wode.png",
 	        "text": "我的"

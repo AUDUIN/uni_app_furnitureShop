@@ -21,7 +21,7 @@
 				<view class="nav-item fl" @tap="jumptodaydeal">
 					优惠
 				</view>
-				<view class="nav-item fl">
+				<view class="nav-item fl" @tap="jumptospec">
 					特色商品
 				</view>
 				<view class="clearfix"></view>
@@ -94,7 +94,9 @@
 				<view class="title">
 					今日分享
 				</view>
-				<view class="today-share" @tap="jumptodetail(goodsdata[3]._id)">
+				<view class="today-share"
+				
+				 @tap="jumptodetail(goodsdata[3]._id)">
 					<image :src=BASE_URL+goodsdata[3].imgurl mode=""></image>
 				</view>
 			</view>
@@ -115,6 +117,11 @@
 		},
 		components: {uniIcons},
 		methods:{
+			jumptospec(){
+				uni.navigateTo({
+					url:"../spec/spec"
+				})
+			},
 			jumptodaydeal(){
 				console.log('jump')
 				uni.navigateTo({
@@ -128,7 +135,6 @@
 			}
 		},
 		onLoad() {
-			
 			uni.request({
 				url: this.BASE_URL+`/goods/list`,
 				 success: (res) => {
