@@ -5,7 +5,10 @@ const store = new Vuex.Store({
     state: {
 		cartd:[],
 		addressData:[],
-		userinfo:{}
+		userinfo:{
+			username:'',
+			userimgurl:''
+		}
 	},
     mutations: {
 		addmut(state,obj){

@@ -89,6 +89,7 @@ export default {
 					pwd:this.pwd
 				},
 				success: (res) => {
+					console.log(res.data.userinfo)
 					if(res.data.code==1){
 						uni.showModal({
 							content: res.data.msg,
@@ -102,17 +103,18 @@ export default {
 									key:'userinfo',
 									data:{
 										username:this.username,
-										userinfo:res.userinfo
+										userinfo:res.data.userinfo
 									}
 								})
 							})				
 							this.$store.commit('usermut',{
 								username:this.username,
-								userinfo:res.userinfo
+								userinfo:res.data.userinfo
 							})
-							uni.switchTab({
-								url:`../home-product/home-product`
-							})
+							
+							// uni.switchTab({
+							// 	url:`../home-product/home-product`
+							// })
 						});
 						
 					}else{

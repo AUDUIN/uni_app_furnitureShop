@@ -71,7 +71,9 @@
 			};
 		},
 		computed:{
-			userinfo
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		}
 	}
 </script>
