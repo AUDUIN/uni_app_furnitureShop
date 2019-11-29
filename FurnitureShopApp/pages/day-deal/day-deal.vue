@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="margin-top: 40upx;">
 		<view class="head">
 			<view class="head-title fl">
 				优惠促销

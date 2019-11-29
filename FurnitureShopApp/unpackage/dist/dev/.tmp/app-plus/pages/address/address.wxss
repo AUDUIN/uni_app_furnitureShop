@@ -27,6 +27,7 @@
 /*顶部颜色*/
 .address {
   height: 1334rpx;
+  margin-top: 40rpx;
   background-color: #091E42;
 }
 .head {

@@ -139,6 +139,7 @@
 	.address {
 		// height: 100%;
 		height: 1334upx;
+		margin-top: 40upx;
 		background-color: #091E42;
 	}
 

@@ -96,6 +96,7 @@
 	.order{
 		background-color: #EFEFF4;
 		overflow: hidden;
+		margin-top: 40upx;
 	}
 	.order-num{
 		font-size: 74upx;

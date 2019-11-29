@@ -1,5 +1,5 @@
 <template>
-	<view class="successOrder" @tap="back">
+	<view class="successOrder" @tap="back" >
 		<view class="txt-box">
 			<view class="checkmark">
 				<image src="../../static/img/ion-checkmark.png" mode=""></image>
@@ -35,6 +35,7 @@
 		background: url(../../static/img/success-order.png) no-repeat;
 		background-size: cover;
 		position: relative;
+		margin-top: 40upx;
 	}
 	.txt-box{
 		position: absolute;

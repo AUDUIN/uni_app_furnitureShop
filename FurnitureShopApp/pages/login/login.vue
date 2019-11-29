@@ -1,5 +1,5 @@
 <template>
-	<view class="uni-flex uni-column  bgc">
+	<view class="uni-flex uni-column  bgc" style="margin-top: 40upx;">
 		<view class="flex-item flex-item-V uni-bg-red">
 			<image class="logo" src="../../static/login/logo.png" mode="aspectFill"></image>
 			<view class="welcome">你好,欢迎回来</view>

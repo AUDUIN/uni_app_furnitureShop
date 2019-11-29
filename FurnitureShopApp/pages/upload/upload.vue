@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="margin-top: 40upx;">
 
 		<form>
 			<view class="border margin">

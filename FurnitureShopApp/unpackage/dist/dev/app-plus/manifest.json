@@ -82,7 +82,7 @@
         }
       }
     },
-    "arguments": "{\"name\":\"\",\"query\":\"\",\"id\":0,\"pathName\":\"pages/login/login\"}",
+    "arguments": "{\"name\":\"\",\"query\":\"\",\"id\":0,\"pathName\":\"pages/firstrender/firstrender\"}",
     "allowsInlineMediaPlayback": true,
     "safearea": {
       "background": "#ffffff",

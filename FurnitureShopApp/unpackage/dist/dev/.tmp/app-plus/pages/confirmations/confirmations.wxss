@@ -28,6 +28,7 @@
 .order {
   background-color: #EFEFF4;
   overflow: hidden;
+  margin-top: 40rpx;
 }
 .order-num {
   font-size: 74rpx;

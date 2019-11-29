@@ -89,6 +89,7 @@
 <style lang="scss">
 	.account{
 		background-color: #091E42;
+		margin-top: 40upx;
 	}
 	.account-title{
 		display: flex;

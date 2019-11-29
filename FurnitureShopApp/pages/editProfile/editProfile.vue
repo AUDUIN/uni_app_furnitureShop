@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="margin-top: 40upx;">
 		<view class="my-list">
 			<view class="my-item" @tap="handleImg">
 				<text>头像</text>

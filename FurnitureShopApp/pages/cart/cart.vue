@@ -106,7 +106,7 @@
 		width: 100vw;
 		height:80vh;
 		background-color: #4CD964;
-		
+		margin-top: 40upx;
 	}
 	.head{
 			padding-bottom: 150upx;

@@ -79,7 +79,7 @@
 		position: relative;
 		width: 100%;
 		height:1334upx;
-		
+		margin-top: 40upx;
 		.mol{
 			position: absolute;
 			top: 0;

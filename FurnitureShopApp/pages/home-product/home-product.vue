@@ -151,7 +151,9 @@
 </script>
 
 <style lang="scss">
-	
+	.home-product{
+		margin-top: 40upx;
+	}
 	.head{
 		background: $bgc;
 		.head-title{

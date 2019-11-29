@@ -29,6 +29,7 @@
   background-color: #091E42;
   text-align: center;
   height: 100vh;
+  margin-top: 40rpx;
 }
 .main .title {
     font-size: 48rpx;

@@ -27,6 +27,7 @@
 /*顶部颜色*/
 .account {
   background-color: #091E42;
+  margin-top: 40rpx;
 }
 .account-title {
   display: -webkit-box;

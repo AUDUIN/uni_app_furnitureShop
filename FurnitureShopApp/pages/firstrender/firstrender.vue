@@ -1,5 +1,5 @@
 <template>
-	<view class="uni-flex uni-column">
+	<view class="uni-flex uni-column" style="margin-top: 40upx;">
 		
 	                <view class="flex-item flex-item-V uni-bg-red  ">
 					  <view class="first">

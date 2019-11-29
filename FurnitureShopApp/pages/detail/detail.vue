@@ -68,6 +68,7 @@
 		background-color: $bgc;
 		text-align: center;
 		height: 100vh;
+		margin-top: 40upx;
 		.title{
 			font-size: 48upx;
 			color: #FAFBFC;
