@@ -1,0 +1,165 @@
+
+.logo {
+	width: 100rpx;
+	height: 100rpx;
+	padding-left: 64rpx;
+	padding-top: 100rpx;
+}
+.bgc {
+	width: 750rpx;
+	height: 1624rpx;
+	background: rgba(9, 30, 66, 1);
+}
+.welcome {
+	width: 480rpx;
+	font-size: 68rpx;
+	font-family: PingFang;
+	font-weight: bold;
+	color: rgba(87, 217, 163, 1);
+	padding-top: 40rpx;
+	padding-left: 66rpx;
+}
+.book {
+	margin-top: 40rpx;
+	margin-bottom: 52rpx;
+}
+.booklogin {
+	padding-left: 65rpx;
+
+	width: 80rpx;
+	font-size: 40rpx;
+	font-family: PingFang;
+	font-weight: bold;
+	color: rgba(94, 108, 132, 1);
+}
+.active {
+	color: rgba(255, 255, 255, 1);
+}
+.ml {
+	padding-left: 114rpx;
+}
+.second-box {
+	width: 750rpx;
+	height: 650rpx;
+	background: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+	        box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+	border-radius: 32rpx;
+}
+.e-mail {
+	padding-top: 64rpx;
+	padding-bottom: 10rpx;
+	margin-bottom: 20rpx;
+	padding-left: 64rpx;
+	padding-right: 64rpx;
+	text-align: center;
+}
+.human {
+	width: 36rpx;
+	height: 36rpx;
+	position: absolute;
+	right: 66rpx;
+	margin-top: -50rpx;
+}
+.hpwd {
+	margin-right: -50rpx;
+}
+.pwd {
+	margin-bottom: 20rpx;
+	padding-bottom: 10rpx;
+	padding-top: 84rpx;
+	padding-left: 64rpx;
+	padding-right: 64rpx;
+	text-align: center;
+}
+.box {
+	border-bottom: 5rpx solid #dfe1e6;
+	margin-left: 50rpx;
+	margin-right: 50rpx;
+}
+.box3 {
+	padding-top: 70rpx;
+	position: relative;
+}
+.box2 {
+	border-bottom: 5rpx solid #dfe1e6;
+	margin-left: 50rpx;
+	margin-right: 50rpx;
+	position: relative;
+}
+.rember {
+	padding-top: 70rpx;
+	width: 116rpx;
+	height: 29rpx;
+	font-size: 30rpx;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: rgba(94, 108, 132, 1);
+}
+.rm {
+	padding-left: 114rpx;
+}
+.fg {
+	padding-left: 340rpx;
+	text-decoration: underline;
+}
+.btn-login {
+	margin-top: 80rpx;
+	width: 332rpx;
+	height: 96rpx;
+	background: rgba(38, 132, 255, 1);
+	-webkit-box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(38, 132, 255, 0.3);
+	        box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(38, 132, 255, 0.3);
+	border-radius: 48rpx;
+}
+.radio {
+	position: absolute;
+	top: 80rpx;
+	left: 30rpx;
+	width: 36rpx;
+	height: 36rpx;
+	background: rgba(94, 108, 132, 1);
+}
+.second-box1 {
+	width: 750rpx;
+	height: 900rpx;
+	background: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+	        box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+	border-radius: 32rpx;
+}
+.fast-fast {
+	position: relative;
+}
+.fast {
+	margin-bottom: -10rpx;
+	margin-left: 50rpx;
+	margin-top: 140rpx;
+	width: 238rpx;
+	height: 34rpx;
+	font-size: 34rpx;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: rgba(94, 108, 132, 1);
+}
+.line-line {
+	left: 320rpx;
+	position: absolute;
+	width: 100rpx;
+	border: 2rpx solid rgba(165, 173, 186, 1);
+}
+.goole {
+	width: 48rpx;
+	height: 48rpx;
+	position: absolute;
+	right: 176rpx;
+	margin-top: -24rpx;
+}
+.face {
+	width: 48rpx;
+	height: 48rpx;
+	position: absolute;
+	right: 82rpx;
+	margin-top: -24rpx;
+}
+

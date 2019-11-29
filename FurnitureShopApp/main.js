@@ -5,7 +5,7 @@ Vue.config.productionTip = false
 Vue.prototype.$store = store
 App.mpType = 'app'
 
-var BASE_URL='http://localhost:3008'
+var BASE_URL='http://106.13.236.138:3008'
 Vue.prototype.BASE_URL=BASE_URL
 
 const app = new Vue({

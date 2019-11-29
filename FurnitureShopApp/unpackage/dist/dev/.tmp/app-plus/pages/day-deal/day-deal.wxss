@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*顶部颜色*/
+.head {
+  padding-bottom: 42rpx;
+  background: #091E42;
+}
+.head .head-title {
+    color: #57D9A3;
+    font-size: 64rpx;
+    padding-left: 64rpx;
+}
+.head .head-user {
+    text-align: center;
+    line-height: 64rpx;
+    margin-top: 24rpx;
+    margin-right: 32rpx;
+    border-radius: 50%;
+    width: 64rpx;
+    height: 64rpx;
+    background-color: white;
+}
+.head .head-user image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+}
+.head .search {
+    margin-top: 42rpx;
+    position: relative;
+}
+.head .search image {
+      position: absolute;
+      width: 36rpx;
+      height: 36rpx;
+      top: 32rpx;
+      left: 62rpx;
+}
+.head .search input {
+      color: #FFFFFF;
+      background-color: #172B4D;
+      width: 586rpx;
+      height: 96rpx;
+      border-radius: 16rpx;
+      margin: auto;
+      padding-left: 100rpx;
+}
+.head .nav {
+    margin-top: 32rpx;
+    padding-bottom: 60rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.head .nav .nav-item {
+      padding: 8rpx 36rpx;
+      text-align: center;
+      color: #A5ADBA;
+}
+.head .nav .nav-item.active {
+        background-color: #57D9A3;
+        color: #FFFFFF;
+}
+.main {
+  background-color: #EFEFF4;
+}
+.main .card {
+    width: 750rpx;
+    background: white;
+    -webkit-box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+            box-shadow: 0rpx 14rpx 34rpx 0rpx rgba(9, 30, 66, 0.2);
+    border-radius: 32rpx;
+    position: relative;
+    top: -16rpx;
+    overflow: hidden;
+    color: #091E42;
+    font-size: 34rpx;
+    font-weight: 600;
+}
+.main .card .on-sale {
+      margin-top: 30rpx;
+      padding-bottom: 50rpx;
+}
+.main .card .goodsinfo {
+      width: 400rpx;
+}
+.main .card .goodspic {
+      padding: 0rpx;
+      margin-left: 90rpx;
+      margin-top: 68rpx;
+      width: 168rpx;
+      height: 248rpx;
+}
+.main .card .goodspic image {
+        width: 100%;
+        height: 100%;
+}
+.main .card .title {
+      margin-top: 86rpx;
+      margin-bottom: 27rpx;
+      margin-left: 125rpx;
+}
+.main .card .price {
+      margin-left: 125rpx;
+}
+.main .card .price text {
+        text-decoration: line-through;
+        font-size: 26rpx;
+        margin-left: 10rpx;
+        color: #5E6C84;
+}
+.main .card .addtocart {
+      width: 60rpx;
+      height: 60rpx;
+      background-color: #FF5230;
+      color: #FFFFFF;
+      font-size: 80rpx;
+      text-align: center;
+      line-height: 50rpx;
+      border-radius: 100%;
+      margin-top: 60rpx;
+}
+.main .btm {
+    margin-top: 20rpx;
+    width: 750rpx;
+    background-color: #EFEFF4 !important;
+}
+.main .btm .title {
+      padding-left: 50rpx;
+      width: 200rpx;
+      height: 45rpx;
+      font-size: 48rpx;
+      font-family: PingFang;
+      font-weight: bold;
+      color: #091E42;
+      line-height: 44rpx;
+}
+.main .btm .today-share {
+      padding: 25rpx;
+      margin-top: 50rpx;
+      border-radius: 48rpx;
+      background-color: #ccc;
+      width: 700rpx;
+      color: #091E42;
+      font-size: 34rpx;
+      font-weight: 600;
+      overflow: hidden;
+}
+.main .btm .today-share image {
+        width: 222rpx;
+        height: 225rpx;
+        margin-top: 140rpx;
+        margin-left: 80rpx;
+        padding-right: 100rpx;
+}
+.main .btm .today-share .name {
+        margin-top: 100rpx;
+}
+.main .btm .today-share .price {
+        margin-left: 125rpx;
+}
+.main .btm .today-share .price text {
+          text-decoration: line-through;
+          font-size: 26rpx;
+          margin-left: 10rpx;
+          color: #5E6C84;
+}
+.main .btm .today-share .addtocart {
+        margin-top: 100rpx;
+        background-color: #FFAB00;
+        width: 200rpx;
+        height: 80rpx;
+        color: #FFFFFF;
+        border-radius: 40rpx;
+        text-align: center;
+        line-height: 80rpx;
+}
+

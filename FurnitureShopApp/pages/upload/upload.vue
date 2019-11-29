@@ -19,6 +19,8 @@
 
 				<view @tap="handlePub" class="cu-btn block margin bg-cyan">
 					确定修改
+					
+					
 				</view>
 			</view>
 
@@ -27,6 +29,7 @@
 </template>
 
 <script>
+	
 	export default {
 
 		data() {
@@ -34,6 +37,11 @@
 				imgUrl: null, //存放前端展示路径
 				pics: null //存放服务器存储路径 
 			};
+		},
+		computed:{
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		},
 		methods: {
 			chooseImage() {
@@ -44,15 +52,15 @@
 						let temp = res.tempFilePaths[0]
 						this.imgUrl = temp;
 						uni.uploadFile({ //上传本地文件资源至服务器
-							url: 'http://localhost:3000/good/upload',
+							url: this.BASE_URL+'/profile',
 							filePath: temp,
-							name: 'goodimg',
+							name: 'avatar',
 							success: (res1) => {
 								console.log(res1)
 								let data = JSON.parse(res1.data)
 								if (data.code == 1) {
 									this.pics = data.imgSrc
-									let url = `http://localhost:3000${data.imgSrc}`
+									let url = this.BASE_URL+data.imgSrc
 									this.imgUrl = url
 								}
 							}
@@ -60,8 +68,23 @@
 					}
 				})
 			},
-			async handlePub() { //修改图片，传入数据库
+			handlePub() { //修改图片，传入数据库
 				
+				uni.request({
+					url:this.BASE_URL+'/users/changeimg',
+					data:{
+						username:this.userinfo.username,
+						userimgurl:this.pics
+					},
+					success: (result) => {
+						console.log(result)
+						uni.showModal({
+							content: '修改成功',
+							showCancel: false
+						});
+						this.$store.commit('changeimgmut',this.pics)
+					}
+				})
 				// let pub = await generalGET(
 				// 	'/users/msg', {
 				// 		title: this.title,
@@ -76,5 +99,5 @@
 </script>
 
 <style lang="scss">
-
+	 @import "../../colorui/main.css";
 </style>

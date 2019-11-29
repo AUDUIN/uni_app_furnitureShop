@@ -5,9 +5,8 @@
 			<view class="head-title fl">
 				探索
 			</view>
-			<view class="head-user fr">
-				<uni-icons type="person" size="32" v-if="true"></uni-icons>
-				<image src="../../static/logo.png" mode="" v-else></image>
+			<view class="head-user fr">		
+				<image :src="BASE_URL+userinfo.userimgurl" mode="" ></image>
 			</view>
 			<view class="clearfix"></view>
 			<view class="search">
@@ -114,6 +113,11 @@
 			return {
 				goodsdata:[],
 			};
+		},
+		computed:{
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		},
 		components: {uniIcons},
 		methods:{

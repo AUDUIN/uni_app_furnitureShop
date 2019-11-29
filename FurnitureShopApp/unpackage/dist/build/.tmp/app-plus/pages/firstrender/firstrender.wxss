@@ -1,0 +1,48 @@
+
+.first {
+	width:750rpx;
+	height:1624rpx;
+	background:rgba(9,30,66,1);
+}
+.title {
+	margin-left: 65rpx;
+	width:393rpx;
+	height:32rpx;
+	font-size:34rpx;
+	font-family:PingFang;
+	font-weight:500;
+	color:rgba(255,255,255,1);
+	line-height:54rpx;
+}
+.welcome {
+	margin-bottom: 25rpx;
+	width: 480rpx;
+	font-size: 68rpx;
+	font-family: PingFang;
+	font-weight: bold;
+	color: rgba(87, 217, 163, 1);
+	padding-top: 98rpx;
+	padding-left: 66rpx;
+}
+.one-pc {
+	margin-top: 64rpx;
+	margin-left: 59rpx;
+	margin-right:59rpx;
+	width:630rpx;
+	height:1034rpx;
+	background:rgba(23,43,77,1);
+	-webkit-box-shadow:0rpx 14rpx 34rpx 0rpx rgba(9,30,66,0.2);
+	        box-shadow:0rpx 14rpx 34rpx 0rpx rgba(9,30,66,0.2);
+	border-radius:16rpx;
+}
+.btn-login {
+	margin-top:120rpx;
+	margin-bottom:120rpx;
+	width:332rpx;
+	height:96rpx;
+	background:rgba(38,132,255,1);
+	-webkit-box-shadow:0rpx 14rpx 34rpx 0rpx rgba(38,132,255,0.3);
+	        box-shadow:0rpx 14rpx 34rpx 0rpx rgba(38,132,255,0.3);
+	border-radius:48rpx;
+}
+

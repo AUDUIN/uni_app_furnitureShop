@@ -5,8 +5,7 @@
 						购物车
 					</view>
 					<view class="head-user fr">
-						<uni-icons type="person" size="32" v-if="true"></uni-icons>
-						<image src="../../static/logo.png" mode="" v-else></image>
+						<image :src="BASE_URL+userinfo.userimgurl" mode=""></image>
 					</view>
 		</view>
 		<view class=" clearfix">
@@ -81,7 +80,12 @@
 					sum+=val.num*val.newprice
 				})
 				return sum
-			}
+			},
+		
+				userinfo(){
+					return this.$store.state.userinfo
+				}
+		
 		},
 		methods:{
 			uporder(){

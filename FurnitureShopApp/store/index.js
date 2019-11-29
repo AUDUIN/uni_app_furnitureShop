@@ -29,7 +29,11 @@ const store = new Vuex.Store({
 			state.addressData[0]=obj
 		},
 		usermut(state,obj){
-			state.userinfo.username=obj.username
+			state.userinfo.username=obj.username;
+			state.userinfo.userimgurl=obj.userinfo.userinfo.userimgurl 
+		},
+		changeimgmut(state,val){
+			state.userinfo.userimgurl=val
 		}
 	},
     actions: {}

@@ -5,7 +5,9 @@
 				<text>头像</text>
 				<view class="my-right" >
 					<!-- <view class="my-pic"></view> -->
-					<view class="cu-avatar radius bg-gray"></view>
+					<view class="cu-avatar radius bg-gray">
+						<image :src="BASE_URL+userinfo.userimgurl" mode=""></image>
+					</view>
 					<text class="cuIcon-right"></text>
 
 				</view>
@@ -59,12 +61,32 @@
 					url:'../upload/upload'
 				})
 			}
+		},
+		computed:{
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
-
+	.bg-gray{
+		background-color: #fff;
+		border-radius: 50%;
+		width: 100upx;
+		height: 100upx;
+	}
+	.cu-avatar{
+		position: relative;
+		image{
+			border-radius: 50%;
+			width: 100upx;
+			height: 100upx;
+			padding: 0;
+			
+		}
+	}
 	.my-list{
 		background-color: #FFFFFF;
 		margin-top: 40upx;

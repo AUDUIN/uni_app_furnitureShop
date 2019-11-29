@@ -5,8 +5,7 @@
 				优惠促销
 			</view>
 			<view class="head-user fr">
-				<uni-icons type="person" size="32" v-if="true"></uni-icons>
-				<image src="../../static/logo.png" mode="" v-else></image>
+				<image :src="BASE_URL+userinfo.userimgurl" mode=""></image>
 			</view>
 			<view class="clearfix"></view>	
 		</view>
@@ -85,14 +84,12 @@
 </template>
 
 <script>
-	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
 				goodsdata:[]
 			}
 		},
-		components:{uniIcons},
 		methods: {
 			jumptodetail(id){
 				uni.navigateTo({
@@ -117,6 +114,11 @@
 				        this.goodsdata=res.data.data
 				    }
 			})
+		},
+		computed:{
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		}
 	}
 </script>

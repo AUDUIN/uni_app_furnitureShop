@@ -7,14 +7,13 @@
 					特殊商品
 				</view>
 				<view class="head-user fr">
-					<uni-icons type="person" size="32" v-if="true"></uni-icons>
-					<image src="../../static/logo.png" mode="" v-else></image>
+					<image :src="BASE_URL+userinfo.userimgurl" mode=""></image>
 				</view>
 				<view class="clearfix"></view>	
 			</view>
 					</view>
 			<view class="flex-item flex-item-V uni-bg-green wcontent secondcontent">
-				<image class="round-table" src="../../static/图层%201.png" mode="aspectFill"></image>
+				<image class="round-table" src="../../static/iron1.png" mode="aspectFill"></image>
 				<view class="m-concent">
 					<view class="t-content"> 简约欧美风
 						圆凳</view>
@@ -61,7 +60,7 @@
 							<view class="good-text3">北欧简约风
 								办公椅</view>
 							<view class="gprice">$302.2</view>
-							<image class="workchair" src="../../static/图层%202.png" mode="aspectFill"></image>
+							<image class="workchair" src="../../static/iron2.png" mode="aspectFill"></image>
 						</view>
 					</view>
 				</view>
@@ -82,6 +81,11 @@
 		},
 		methods: {
 
+		},
+		computed:{
+			userinfo(){
+				return this.$store.state.userinfo
+			}
 		}
 	}
 </script>

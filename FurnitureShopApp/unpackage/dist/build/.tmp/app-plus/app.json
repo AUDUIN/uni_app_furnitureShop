@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/firstrender/firstrender",
+    "pages/home-product/home-product",
+    "pages/spec/spec",
+    "pages/shoppingCart/shoppingCart",
+    "pages/cart/cart",
+    "pages/address/address",
+    "pages/day-deal/day-deal",
+    "pages/detail/detail",
+    "pages/confirmations/confirmations",
+    "pages/successOrder/successOrder",
+    "pages/profile/profile",
+    "pages/editProfile/editProfile",
+    "pages/upload/upload",
+    "pages/login/login",
+    "pages/sign/sign"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home-product/home-product",
+        "iconPath": "static/img/search.png",
+        "selectedIconPath": "static/img/ion-android-search%20-%20Ionicons.png",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/img/cart.png",
+        "selectedIconPath": "static/img/cart.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/img/wode.png",
+        "selectedIconPath": "static/img/wode.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "FurnitureShopApp",
+  "compilerVersion": "2.4.2",
+  "usingComponents": {}
+}

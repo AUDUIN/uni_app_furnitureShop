@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "transparentTitle": "always",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
+}

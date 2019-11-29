@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*顶部颜色*/
+.head {
+  background: #091E42;
+  padding-bottom: 60rpx;
+}
+.head .head-title {
+    color: #57D9A3;
+    font-size: 72rpx;
+    padding-left: 64rpx;
+}
+.head .head-user {
+    text-align: center;
+    line-height: 64rpx;
+    margin-top: 24rpx;
+    margin-right: 32rpx;
+    border-radius: 50%;
+    width: 64rpx;
+    height: 64rpx;
+    background-color: white;
+}
+.head .head-user image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+}
+.head .search {
+    margin-top: 42rpx;
+    position: relative;
+}
+.head .search image {
+      position: absolute;
+      width: 36rpx;
+      height: 36rpx;
+      top: 32rpx;
+      left: 62rpx;
+}
+.head .search input {
+      color: #FFFFFF;
+      background-color: #172B4D;
+      width: 586rpx;
+      height: 96rpx;
+      border-radius: 16rpx;
+      margin: auto;
+      padding-left: 100rpx;
+}
+.head .nav {
+    margin-top: 32rpx;
+    padding-bottom: 60rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.head .nav .nav-item {
+      padding: 8rpx 36rpx;
+      text-align: center;
+      color: #A5ADBA;
+}
+.head .nav .nav-item.active {
+        background-color: #57D9A3;
+        color: #FFFFFF;
+}
+.toparea {
+  width: 750rpx;
+  height: 122rpx;
+  background: #091e42;
+}
+.wcontent {
+  width: 750rpx;
+  height: 418rpx;
+  border-radius: 32rpx;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0rpx 8rpx 16rpx 0rpx rgba(9, 30, 66, 0.1);
+          box-shadow: 0rpx 8rpx 16rpx 0rpx rgba(9, 30, 66, 0.1);
+}
+.top-text {
+  vertical-align: middle;
+  font-weight: SC-Bold;
+  font-size: 70rpx;
+  width: 282rpx;
+  height: 70rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #57D9A3;
+  margin-left: 34rpx;
+  margin-top: 12rpx;
+}
+.uni-top-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 100rpx;
+  margin-top: -60rpx;
+  margin-left: 654rpx;
+}
+.secondcontent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 48rpx;
+  position: relative;
+  top: -50rpx;
+}
+.round-table {
+  width: 168rpx;
+  height: 248rpx;
+  margin: 95rpx 100rpx 75rpx 79rpx;
+  vertical-align: middle;
+}
+.t-content {
+  vertical-align: top;
+  width: 240rpx;
+  font-size: 48rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #172b4d;
+  margin-top: 108rpx;
+}
+.orginal {
+  vertical-align: top;
+  width: 170rpx;
+  font-size: 34rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #5e6c84;
+  line-height: 44rpx;
+}
+.m-concent {
+  width: 240rpx;
+  height: 170rpx;
+}
+.m-price {
+  font-size: 26rpx;
+  font-family: PingFang;
+  font-weight: bold;
+}
+.roundround {
+  text-align: center;
+  vertical-align: top;
+  width: 59rpx;
+  height: 59rpx;
+  color: #FFFFFF;
+  font-size: 59rpx;
+  border-radius: 50%;
+  background-color: #39B54A;
+  margin-top: 236rpx;
+  margin-right: 46rpx;
+}
+.good-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 750rpx;
+  background-color: #FAFBFC;
+}
+.good-list1 {
+  width: 328rpx;
+  height: 448rpx;
+  background: #5e6c84;
+  border-radius: 16rpx;
+  margin: 20rpx;
+}
+.good-list1-text {
+  width: 328rpx;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.wood {
+  width: 187rpx;
+  height: 192rpx;
+  margin-left: 62rpx;
+  margin-right: 78rpx;
+  vertical-align: middle;
+}
+.chair {
+  margin-top: 32rpx;
+  margin-left: 32rpx;
+  width: 244rpx;
+  height: 255rpx;
+}
+.good-list2 {
+  width: 328rpx;
+  height: 538rpx;
+  background: #f1f1f1;
+  border-radius: 16rpx;
+  margin: 20rpx;
+  color: #5E6C84;
+}
+.good-list2-text {
+  width: 328rpx;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.good-text2 {
+  padding-top: 20rpx;
+  margin-left: 34rpx;
+  width: 170rpx;
+  font-size: 34rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #5E6C84;
+}
+.gprice2 {
+  margin-top: 5rpx;
+  margin-left: 34rpx;
+  width: 70rpx;
+  height: 25rpx;
+  font-size: 30rpx;
+  font-family: SFProText;
+  font-weight: 600;
+  color: #5E6C84;
+  line-height: 40rpx;
+}
+.good-list3 {
+  width: 327rpx;
+  height: 448rpx;
+  background: #ffab00;
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: -80rpx;
+}
+.good-text3 {
+  padding-top: 20rpx;
+  margin-left: 34rpx;
+  width: 170rpx;
+  font-size: 34rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #fafbfc;
+}
+.line {
+  width: 82rpx;
+  height: 270rpx;
+  margin-left: 119rpx;
+  margin-top: 52rpx;
+}
+.good-list4 {
+  width: 327rpx;
+  height: 358rpx;
+  background: #57d9a3;
+  border-radius: 16rpx;
+  margin: 20rpx;
+}
+.workchair {
+  width: 169rpx;
+  height: 250rpx;
+  margin-left: 104rpx;
+  margin-top: -30rpx;
+}
+.good-text {
+  padding-top: 20rpx;
+  margin-left: 34rpx;
+  width: 170rpx;
+  font-size: 34rpx;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #fafbfc;
+}
+.gprice {
+  margin-top: 5rpx;
+  margin-left: 34rpx;
+  width: 70rpx;
+  height: 25rpx;
+  font-size: 30rpx;
+  font-family: SFProText;
+  font-weight: 600;
+  color: #fafbfc;
+  line-height: 40rpx;
+}
+

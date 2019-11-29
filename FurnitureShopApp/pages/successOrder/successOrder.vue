@@ -1,5 +1,5 @@
 <template>
-	<view class="successOrder">
+	<view class="successOrder" @tap="back">
 		<view class="txt-box">
 			<view class="checkmark">
 				<image src="../../static/img/ion-checkmark.png" mode=""></image>
@@ -17,6 +17,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			back(){
+				uni.switchTab({
+					url:'../home-product/home-product'
+				})
+			}
 		}
 	}
 </script>

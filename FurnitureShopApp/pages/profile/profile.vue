@@ -12,8 +12,8 @@
 					<text>945</text>
 					<text>粉丝</text>
 				</view>
-				<view class="profile-picture">
-					<image src="../../static/Image.png" mode=""></image>
+				<view class="profile-picture" @tap="toedit">
+					<image :src="BASE_URL+userinfo.userimgurl" mode=""></image>
 				</view>
 				<view class="collect">
 					<image src="../../static/img/ion-heart.png" mode=""></image>
@@ -23,6 +23,7 @@
 			</view>
 			<view class="account-user-nameloc">
 				<text>{{userinfo.username}}</text>
+				
 				<view class="location">
 					<image src="../../static/img/ion-location.png" mode=""></image>
 					<text>美国，拉斯维加斯</text>
@@ -69,6 +70,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			toedit(){
+				uni.navigateTo({
+					url:'../editProfile/editProfile'
+				})
+			}
 		},
 		computed:{
 			userinfo(){

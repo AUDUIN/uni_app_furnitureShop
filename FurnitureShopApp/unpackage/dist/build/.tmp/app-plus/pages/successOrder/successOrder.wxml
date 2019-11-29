@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['back',['$event']]]]]}}" class="successOrder" bindtap="__e"><view class="txt-box"><view class="checkmark"><image src="../../static/img/ion-checkmark.png" mode></image></view><text>提交成功</text><view class="_p">你的订单正在安排中请耐心等待</view><text>订单号: A890345</text></view></view>

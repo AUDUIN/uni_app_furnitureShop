@@ -40,7 +40,7 @@
 		</view>
 		<view class="cart-foot">
 			<image  @tap="back" src="../../static/img/arrow-back.png" mode=""></image>
-			<view class="checkmark">
+			<view class="checkmark" @tap="sure">
 				<image src="../../static/img/ion-checkmark.png" mode=""></image>
 				
 			</view>
@@ -56,6 +56,11 @@
 			}
 		},
 		methods:{
+			sure(){
+				uni.navigateTo({
+					url:"../successOrder/successOrder"
+				})
+			},
 			edit(){
 				uni.navigateTo({
 					url:"../address/address?editNum=0"

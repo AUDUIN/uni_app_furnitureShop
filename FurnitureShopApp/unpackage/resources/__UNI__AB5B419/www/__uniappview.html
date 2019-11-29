@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"FurnitureShopApp","entryPagePath":"pages/firstrender/firstrender.html","page":{"pages/firstrender/firstrender.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/home-product/home-product.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"}}},"pages/spec/spec.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/shoppingCart/shoppingCart.html":{"window":{"navigationStyle":"custom","usingComponents":{"uni-icon":"/components/uni-icons/uni-icons"}}},"pages/cart/cart.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/address/address.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/day-deal/day-deal.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/detail/detail.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/confirmations/confirmations.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/successOrder/successOrder.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/profile/profile.html":{"window":{"navigationBarTitleText":"","transparentTitle":"always","usingComponents":{}}},"pages/editProfile/editProfile.html":{"window":{"navigationBarTitleText":"账号资料","usingComponents":{}}},"pages/upload/upload.html":{"window":{"navigationBarTitleText":"修改头像","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/sign/sign.html":{"window":{"navigationStyle":"custom","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#7A7E83","selectedColor":"#3cc51f","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/home-product/home-product.html","iconPath":"static/img/search.png","selectedIconPath":"static/img/ion-android-search%20-%20Ionicons.png","text":"探索"},{"pagePath":"pages/cart/cart.html","iconPath":"static/img/cart.png","selectedIconPath":"static/img/cart.png","text":"购物车"},{"pagePath":"pages/profile/profile.html","iconPath":"static/img/wode.png","selectedIconPath":"static/img/wode.png","text":"我的"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/firstrender/firstrender","pages/home-product/home-product","pages/spec/spec","pages/shoppingCart/shoppingCart","pages/cart/cart","pages/address/address","pages/day-deal/day-deal","pages/detail/detail","pages/confirmations/confirmations","pages/successOrder/successOrder","pages/profile/profile","pages/editProfile/editProfile","pages/upload/upload","pages/login/login","pages/sign/sign"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.4.2","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

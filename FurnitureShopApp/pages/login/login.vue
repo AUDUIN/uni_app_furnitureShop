@@ -46,39 +46,41 @@ export default {
 			pwd:'123456'
 		};
 	},
-	onLoad() {
-		uni.getStorage({
-			key:'token',
-			success: (res) => {
-				console.log(res.data)
-				uni.request({
-					url:this.BASE_URL+'/users/token/verify',
-					data:{
-						token:res.data
-					},
-					success: (result) => {
-						uni.showModal({
-							content: result.data.msg+'即将进入首页',
-							showCancel: false
-						}).then(()=>{
-							uni.getStorage({
-								key:'userinfo',
-								success: (user) => {
-									console.log(user)
-									this.$store.commit('usermut',user)
-									// uni.switchTab({
-									// 	url:`../home-product/home-product`
-									// })
-								}
-							})
+	onLoad(option) {
+		if(option.username)
+		this.username=option.username;
+	// 	uni.getStorage({
+	// 		key:'token',
+	// 		success: (res) => {
+	// 			console.log(res.data)
+	// 			uni.request({
+	// 				url:this.BASE_URL+'/users/token/verify',
+	// 				data:{
+	// 					token:res.data
+	// 				},
+	// 				success: (result) => {
+	// 					uni.showModal({
+	// 						content: result.data.msg+'即将进入首页',
+	// 						showCancel: false
+	// 					}).then(()=>{
+	// 						uni.getStorage({
+	// 							key:'userinfo',
+	// 							success: (user) => {
+	// 								console.log(user)
+	// 								this.$store.commit('usermut',user)
+	// 								// uni.switchTab({
+	// 								// 	url:`../home-product/home-product`
+	// 								// })
+	// 							}
+	// 						})
 							
 							
-						});
+	// 					});
 						
-					}
-				})
-			}
-		})
+	// 				}
+	// 			})
+	// 		}
+	// 	})
 	},
 	methods: {
 		login(){
@@ -112,9 +114,9 @@ export default {
 								userinfo:res.data.userinfo
 							})
 							
-							// uni.switchTab({
-							// 	url:`../home-product/home-product`
-							// })
+							uni.switchTab({
+								url:`../home-product/home-product`
+							})
 						});
 						
 					}else{

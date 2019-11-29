@@ -90,8 +90,8 @@ export default {
 							content: '注册成功',
 							showCancel: false
 						});
-						uni.switchTab({
-							url: `../home-product/home-product`
+						uni.navigateTo({
+							url: `../login/login?username=${this.username}`
 						});
 					}else{
 						uni.showModal({
